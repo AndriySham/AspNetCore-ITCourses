@@ -1,0 +1,25 @@
+﻿@model StudentModel
+@{
+    ViewData["Title"] = "Редактирование студента";
+}
+
+<form method="post" asp-controller="Student" asp-action="EditStudent" asp-route-StudentId="@Model.Id" asp-route-GroupId="@Model.GroupId">
+    <div class="form-edit-student">
+        <p class="label-edit-student">Редактирование студента:</p>
+        <div class="label-first-last-name">
+            <label asp-for="FirstName">Имя</label>
+        </div>
+        <div>
+            <input type="text" asp-for="FirstName"  class="form-input-student"/>
+        </div>
+        <div class="label-first-last-name">
+            <label asp-for="LastName">Фамилия</label>
+        </div>
+        <div>
+            <input type="text" asp-for="LastName"  class="form-input-student"/>
+        </div>
+    </div>
+    <span>
+        <input type="submit" class="button button-delete but-del-submit" value="Сохранить"/>
+    </span>
+</form>

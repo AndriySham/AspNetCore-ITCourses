@@ -1,0 +1,38 @@
+﻿@model IEnumerable<StudentModel>
+@{
+    ViewData["Title"] = "Студенты";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Students</title>
+    </head>
+    <body>
+        <h3 class="title">Students</h3>
+        <table class="table table-display-students">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var student in Model)
+                {
+                    if(ViewBag.GroupId == student.GroupId)
+                    {
+                    <tr>
+                        <td>@student.FirstName</td>
+                        <td>@student.LastName</td>
+                        <td>
+                            <a class="button button-update" asp-controller="Student" asp-action="EditStudent" asp-route-id="@student.Id">Изменить</a> 
+                            <a class="button button-delete" asp-controller="Student" asp-action="DeleteStudent" asp-route-id="@student.Id">Удалить</a>
+                        </td>
+                    </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </body>
+</html>

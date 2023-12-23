@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Courses.Web.App\Courses.Web.App.csproj" />
+    <ProjectReference Include="..\Domain\Courses\Courses.csproj" />
+    <ProjectReference Include="..\Infrastructure\Courses.Data.EF\Courses.Data.EF.csproj" />
+  </ItemGroup>
+
+</Project>

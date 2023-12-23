@@ -1,0 +1,176 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus, :active { outline: none; }
+a:focus, a:active { outline: none; }
+
+nav, footer, header, aside { display: block; }
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea { font-family: inherit; }
+
+input::-ms-clear { display: none; }
+button { cursor: pointer; }
+button::-moz-focus-inner { padding: 0; border: 0; }
+a, a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+ul li { list-style: none; }
+img { vertical-align: top; }
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: 400; }
+/*---------------*/
+
+
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.page {
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+.header {
+    padding: 15px;
+    border-bottom: 1px solid cadetblue;
+    background-color: #e8e8e8;
+}
+.button-main-page {
+    padding: 5px 15px 5px 15px;
+    box-shadow: 1px 2px 5px grey;
+    text-transform: uppercase;
+    border-radius: 15px;
+}
+.button-main-page:hover {
+    text-decoration: underline;
+    color: coral;
+}
+.container {
+    height: 100%;
+    padding: 0px 15px;
+    margin: 0 auto;
+    max-width: 1170px;
+    background-color: #e8e8e8;
+}
+.table {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-collapse: collapse;
+}
+.table.color-link:hover{
+    color: red;
+    text-decoration: underline;
+}
+.table th {
+    text-align: left;
+    padding: 15px 15px 15px 15px;
+    background-color: lightblue;
+}
+.table td {
+    text-align: justify;
+    padding: 10px 15px 10px 15px;
+    line-height: 25px;
+}
+.table tr:nth-child(even){
+    background: #f5f5f5;
+}
+.table tr {
+    transform: all 0.3s;
+}
+.table-display-students tr:hover {
+    color: blue;
+}
+
+.title {
+    font-size: 30px;
+    padding: 10px 0px 10px 0px;
+}
+.button {
+    background: lightblue;
+    border-radius: 15px;
+    transition-duration: 500ms;
+    box-shadow: 1px 2px 5px grey;
+}
+.button-update {
+    padding: 6px 12px 6px 12px;
+    margin: 0 10px 0 0;
+}
+.button-update:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+.button-delete {
+    padding: 6px 15px 6px 15px;
+}
+.button-delete:hover{
+    text-decoration: underline;
+    color:coral;
+}
+.but-del-submit{
+    margin: 15px 0px 0px 0px;
+}
+
+.form-edit-student {
+    padding: 0px 20px 20px 20px;
+    margin: 0px 20px 5px 0px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-collapse: collapse;
+    max-width: 400px;
+}
+.label-edit-student {
+    font-weight: 700;
+    text-align: left;
+    padding: 15px 15px 15px 15px;
+    background-color: lightblue;
+    margin: 0px -20px;
+}
+.label-first-last-name {
+    padding: 10px 0px;
+    font-weight: 700;
+}
+.form-input-student {
+    border: 1px solid lightblue;
+    height: 50px;
+    width: 360px;
+    font-size: 20px;
+    padding: 0px 15px;
+}
+.form-input-student:focus {
+    box-shadow: 0 0 15px lightblue;
+}
+.footer {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    border-top: 1px solid cadetblue;
+    background-color: #e8e8e8;
+}
+.delete-forbidden {
+    font-size: 18px;
+    padding: 50px 20px 30px 20px;
+}
+.delete-forbidden-link {
+    padding: 0px 0px 0px 20px;
+    text-decoration: underline;
+}
+.delete-forbidden-link:hover {
+    text-decoration: underline;
+    color: coral;
+}

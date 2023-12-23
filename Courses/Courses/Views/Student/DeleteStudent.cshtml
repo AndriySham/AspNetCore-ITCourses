@@ -1,0 +1,31 @@
+﻿@model StudentModel
+@{
+    ViewBag.Title = "Удаление студента";
+}
+
+<div>
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Удаление пользователя:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@Model.FirstName</td>
+                </tr>
+                <tr>
+                    <td>@Model.LastName</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <form method="post" asp-action="DeleteStudent" asp-controller="Student">
+            <div>
+                <input type="submit" class="button button-delete but-del-submit" value="Удалить" />
+            </div>
+        </form>
+    </div>
+</div>
